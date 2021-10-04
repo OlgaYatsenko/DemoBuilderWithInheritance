@@ -1,9 +1,5 @@
 class SchoolChild extends Child{
-
-
-    public void setSchoolName(String schoolName) {
-        this.schoolName = schoolName;
-    }
+    protected SchoolChild(){};
 
     @Override
     public String toString() {
@@ -22,7 +18,6 @@ class SchoolChildBuilder extends ChildBuilder<SchoolChildBuilder>{
         return  self();
     }
 
-    //public SchoolChild build(){return child;    }
 
     @Override
     public String toString() {

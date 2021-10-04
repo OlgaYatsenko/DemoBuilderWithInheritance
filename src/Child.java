@@ -2,13 +2,13 @@ class Child{
     protected String name;
     protected String schoolName;
 
+    protected Child(){};
+
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+
 
     @Override
     public String toString() {
@@ -24,7 +24,7 @@ class ChildBuilder<SELF extends ChildBuilder>{
 
 
     public SELF withName(String name){
-        child.setName(name);
+        child.name=name;
         return self();
     }
 
